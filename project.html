@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADA Project</title>
+    <title>Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-
 <body>
-
+    
     <header class="topbar">
         <div class="container flex justify-between items-center">
             <div class="icons">
@@ -77,8 +76,8 @@
         </div>
         <div class="navbar magic-shadow">
             <div class="container flex justify-center">
-                <a href="./" class="active">home</a>
-                <a href="./project.html">Project</a>
+                <a href="./index.html">home</a>
+                <a href="./project.html" class="active">Project</a>
                 <a href="#">About</a>
                 <a href="#">Blog</a>
                 <a href="#">Shop</a>
@@ -88,34 +87,44 @@
             </div>
         </div>
     </nav>
-    <header class="hero flex items-center">
-        <div class="container">
-
-            <div class="welcome flex items-center">
-                <span>welcome to </span>
-                
-            </div>
-
-            <h1>Our Best <span>Least Time</span> Path Finder</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti repellat eos ex. Optio est consectetur dignissimos quod mollitia perspiciatis tenetur. Repellendus, quasi provident? Similique aliquam repellendus ab veritatis dolorum.</p>
-
-            <div>
-                <a href="./index.html"> <button class="btn btn-primary">About</button></a>
-                <a href="./project.html"> <button class="btn btn-secondary">  Project</button> </a> 
-            </div>
-
-            <div class="hero-image">
-                <img src="./images/image-1.jpg" alt="">
-
-            </div>
-
-        </div>
-    </header>
     
+    <!-- <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+        <div>
+            Algorithm Design & Analysis(MTE project)
+        </div>
+        <div> 
+            Least Time Travel Path Project
+        </div> 
 
- 
+    </nav> -->
+    <div class="names">
+       <b>
+           Made By: <br> Pankaj Joshi (2K20/CO/315) <br>
+        Parvesh Kr. Sirmoria (2K20/CO/320)
+       </b> 
+    </div>
+    <div id="container">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Red link represents bus travel time : <i class="fa fa-bus" aria-hidden="true" style="color: orange"></i><br>
+                Green link represents flight travel time : <i class="fa fa-plane" aria-hidden="true" style="color: green"></i><br>
+                Click on solve to get Solution !!
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
 
-
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
 </body>
 
+</body>
 </html>
